@@ -43,6 +43,10 @@ start_vlmcsd()
 {
         /etc/KMSServer/vlmcsdmulti-x64-musl-static vlmcsd
 }
+set_tuna_mirrorslist
+update_system
+prepare_Env
+get_vlmcsd
 unzip_vlmcsd
 edit_profile
 start_vlmcsd
