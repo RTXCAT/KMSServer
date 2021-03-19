@@ -35,9 +35,10 @@ uzip_vlmcsd()
 }
 edit_profile()
 {
-        echo >> /etc/profile \
-        firewall-cmd --zone=public --add-port=1688/tcp --permanent \
-        firewall-cmd --reload 
+        echo -e >> /etc/profile \
+        firewall-cmd --zone=public --add-port=1688/tcp --permanent \n
+        firewall-cmd --reload \n
+        /etc/KMSServer/vlmcsdmulti-x64-musl-static vlmcsd
 }
 start_vlmcsd()
 {
